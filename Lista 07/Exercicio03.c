@@ -2,7 +2,9 @@
 #include <stdlib.h>
 #include <locale.h>
 #include <time.h>
-
+//3) Faça um código que receba números inteiros do usuário, e grave em um arquivo esses números,
+//juntamente com as informações se ele é positivo ou negativo, se ele é par ou ímpar. 
+//O programa só termina se o usuário digitar 0 (zero)
 
 int main(int argc, char *argv[]) {
 	
@@ -22,16 +24,16 @@ int main(int argc, char *argv[]) {
 	
 		do
 		{
-			printf("Insira um n�mero inteiro (digite 0 para parar): ");
+			printf("Insira um número inteiro (digite 0 para parar): ");
 			scanf("%d", &num);
 			
 			if(num > 0)
 			{
-				fprintf(pont_arq, "O n�mero %d � POSITIVO e ", num);	
+				fprintf(pont_arq, "O número %d é POSITIVO e ", num);	
 			}
 			else
 			{
-				fprintf(pont_arq, "O n�mero %d � NEGATIVO e ", num);
+				fprintf(pont_arq, "O número %d é NEGATIVO e ", num);
 			}
 			
 			if(num % 2 == 0)
@@ -40,7 +42,7 @@ int main(int argc, char *argv[]) {
 			}
 			else
 			{
-				fprintf(pont_arq, "�MPAR.\n");
+				fprintf(pont_arq, "ÍMPAR.\n");
 			}
 		}while(num!=0);
 
