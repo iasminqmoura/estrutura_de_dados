@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <locale.h>
 
+//6) Gere uma matriz 10x10 com números aleatórios entre 10 e 99 e grave a matriz em um arquivo.
+
 int main() 
 {	
 	setlocale(LC_ALL, "Portuguese");
