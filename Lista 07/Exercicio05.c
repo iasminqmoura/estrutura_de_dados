@@ -2,6 +2,11 @@
 #include<locale.h>
 #include<string.h>
 
+//5) Criação de texto aleatório. Gere um número aleatório entre 10 e 20 para linhas do texto. 
+//Para cada linha gere um número aleatório entre 5 a 20 para palavras. 
+//Para cada palavra gere um número aleatório entre 1 e 15 para letras. 
+//Essas letras deve ser aleatórias (tabela ASCII). Grave o texto em um arquivo.
+
 int main(){
 
 	int n, i, j, k;
