@@ -1,7 +1,13 @@
 #include <stdio.h>
 #include <conio.h>
+#include <locale.h>
+
+//4) Faça um código que escreva todos os números entre 1 e 50 em romanos em um arquivo. 
+//Um número por linha no seguinte formato: 1 :: I; 2 :: II; 3 :: III; 4 :: IV; etc.
+
 int main()
 {
+    setlocale(LC_ALL, "Portuguese");
     int num, aux, uni, dez;
    
     char d[9][5] = {"X","XX","XXX","XL","L"};
