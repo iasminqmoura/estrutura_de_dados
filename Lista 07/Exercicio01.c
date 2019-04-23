@@ -2,31 +2,31 @@
 #include <stdlib.h>
 #include <locale.h>
 #include <time.h>
-
+//01) Fa√ßa um c√≥digo que grave em um arquivo 100 n√∫meros aleat√≥rios entre -100 e 100.
 
 int main(int argc, char *argv[]) {
 	
 	setlocale(LC_ALL, "Portuguese");
 	srand(time(NULL));	
 	
-	/*01) FaÁa um cÛdigo que grave em um arquivo 100 n˙meros aleatÛrios entre -100 e 100.
+	/*01) Fa√ßa um c√≥digo que grave em um arquivo 100 n√∫meros aleat√≥rios entre -100 e 100.
 	
-          Permissıes para arquivos: 
-          r: Permiss„o de abertura somente para leitura. … necess·rio que o arquivo j· exista.
-          w: Permiss„o de abertura para escrita (gravaÁ„o). Cria o arquivo caso ele n„o exista
+          Permiss√µes para arquivos: 
+          r: Permiss√£o de abertura somente para leitura. √â necess√°rio que o arquivo j√° exista.
+          w: Permiss√£o de abertura para escrita (grava√ß√£o). Cria o arquivo caso ele n√£o exista
              e caso o mesmo exista ele RECRIA o arquivo novamente fazendo com que todos os dados
              existentes sejam perdidos. 
-          a: Permiss„o para abrir um arquivo texto para escrita (gravaÁ„o), permite acrescentar
+          a: Permiss√£o para abrir um arquivo texto para escrita (grava√ß√£o), permite acrescentar
              novos dados ao final do arquivo.
 	*/
 	
 	// MIN + (rand() % (MAX - MIN) + 1)
 	// -100 + (rand() % 201)
 	
-	FILE *pont_arq; //cria vari·vel ponteiro para o arquivo 
+	FILE *pont_arq; //cria vari√°vel ponteiro para o arquivo 
 	int i, j;
 	
-	//abrindo o arquivo com tipo de abertura W (sempre ser· gerado um novo arquivo com novos n˙meros aleatÛrios)
+	//abrindo o arquivo com tipo de abertura W (sempre ser√° gerado um novo arquivo com novos n√∫meros aleat√≥rios)
 	pont_arq = fopen("exercicio01.txt", "w");
 	
 	//verificando se o arquivo foi realmente criado
