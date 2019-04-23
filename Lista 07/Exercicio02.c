@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <locale.h>
 #include <time.h>
-
+//2) Faça um código que grave um arquivo os números de 0 a 99, porém apenas dez números por linha.
 
 int main(int argc, char *argv[]) {
 	
